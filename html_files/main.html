@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+    <title>Sygnia</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header class="b_header">
+      <div class="container">
+        <div class="header_wrapper flex">
+          <div class="logo_wrapper"><a class="link_logo" href="main.html"><img src="images/main_logo.svg" alt=""></a></div>
+          <div class="header_menu_wrap flex">
+            <div class="header_menu">
+              <div class="header_menu_inner">
+                <div class="menu">
+                  <ul>
+                    <li class="menu-item menu-item-has-children mega_menu"><a href="#">Solutions</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item menu-item-has-children column_01"><a href="#">Services</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item menu-item-has-children category columns"><a href="#">Cyber Readiness</a>
+                              <ul class="sub-menu">
+                                <li class="menu-item menu-item-has-children sub_category"><a href="#">Know</a>
+                                  <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Posture Assessment & Resilience Enhancement</a></li>
+                                    <li class="menu-item"><a href="#">Cloud & OT Assessments</a></li>
+                                  </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children sub_category"><a href="#">Prepare</a>
+                                  <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Crisis preparedness</a></li>
+                                    <li class="menu-item"><a href="#">Contingency Planning & IR Readiness</a></li>
+                                  </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children sub_category"><a href="#">Simulate</a>
+                                  <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Red Teaming</a></li>
+                                    <li class="menu-item"><a href="#">Purple Teaming​</a></li>
+                                    <li class="menu-item"><a href="#">Tabletop Wargames​</a></li>
+                                  </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children sub_category"><a href="#">Detect</a>
+                                  <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Continuous Monitoring (MXDR)</a></li>
+                                    <li class="menu-item"><a href="#">Threat Hunting & Compromise Assessment</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children category"><a href="#">Cyber response</a>
+                              <ul class="sub-menu">
+                                <li class="menu-item menu-item-has-children sub_category"><a href="#">Respond & Recover</a>
+                                  <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Cyber Crisis Management</a></li>
+                                    <li class="menu-item"><a href="#">Forensic investigation</a></li>
+                                    <li class="menu-item"><a href="#">Remediation & Recovery</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children column_02"><a href="#">Technologies</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Velocity XDR</a></li>
+                            <li class="menu-item"><a href="#">Newton</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children column_03"><a href="#">Enterprise Solutions</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">OT Security</a></li>
+                            <li class="menu-item"><a href="#">Cloud Security</a></li>
+                            <li class="menu-item"><a href="#">Ransomware Readiness</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children two_columm"><a href="#">Company</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item menu-item-has-children category"><a href="#">About us</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Sygnia Story and Values</a></li>
+                            <li class="menu-item"><a href="#">Leadership</a></li>
+                            <li class="menu-item"><a href="#">Press releases</a></li>
+                            <li class="menu-item"><a href="#">Media mentions and recognition</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children category"><a href="#">Our Clients</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Case studies</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children"><a href="#">Careers</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Our Culture</a></li>
+                        <li class="menu-item"><a href="#">Job opening</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children"><a href="#">Knowledge Center</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Blog</a></li>
+                        <li class="menu-item"><a href="#">Threat reports & advisories</a></li>
+                        <li class="menu-item"><a href="#">Guides and tools</a></li>
+                        <li class="menu-item"><a href="#">Events and Webinars</a></li>
+                        <li class="menu-item"><a href="#">White Papers</a></li>
+                        <li class="menu-item"><a href="#">Podcasts</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="search_wrapper">
+              <button class="btn_reset btn_search" type="button"></button>
+            </div>
+            <div class="mobile_button_menu">
+              <button class="menu_toggler jsMenu"><span class="toggler_top"></span><span class="toggler_middle"></span><span class="toggler_bottom"></span></button>
+            </div>
+          </div>
+        </div>
+        <div class="custom_navigation">
+          <div class="nav_item"><a class="nav_link gold_color" href="contact_form_under_attack.html"><span class="icon"><img src="images/icon_info.svg" alt=""></span><span class="title">I’m under attack</span></a></div>
+          <div class="nav_item"><a class="nav_link" href="contact_form_general.html"><span class="title">Contact us</span></a></div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile_header_menu">
+      <div class="mobile_menu_inner">
+        <div class="menu_button"><a class="btn" href="contact_form_under_attack.html"><span class="icon"><img src="images/icon_info.svg" alt=""></span><span class="title">I’m under attack</span></a></div>
+        <div class="mobile_menu_block">
+          <div class="menu_wrap">
+            <div class="menu_list">
+              <ul>
+                <li class="menu-item menu-item-has-children mega_menu"><a href="#">Solutions</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item menu-item-has-children column_01"><a href="#">Services</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item menu-item-has-children category columns"><a href="#">Cyber Readiness</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item menu-item-has-children sub_category"><a href="#">Know</a>
+                              <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Posture Assessment & Resilience Enhancement</a></li>
+                                <li class="menu-item"><a href="#">Cloud & OT Assessments</a></li>
+                              </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children sub_category"><a href="#">Prepare</a>
+                              <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Crisis preparedness</a></li>
+                                <li class="menu-item"><a href="#">Contingency Planning & IR Readiness</a></li>
+                              </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children sub_category"><a href="#">Simulate</a>
+                              <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Red Teaming</a></li>
+                                <li class="menu-item"><a href="#">Purple Teaming​</a></li>
+                                <li class="menu-item"><a href="#">Tabletop Wargames​</a></li>
+                              </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children sub_category"><a href="#">Detect</a>
+                              <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Continuous Monitoring (MXDR)</a></li>
+                                <li class="menu-item"><a href="#">Threat Hunting & Compromise Assessment</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children category"><a href="#">Cyber response</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item menu-item-has-children sub_category"><a href="#">Respond & Recover</a>
+                              <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Cyber Crisis Management</a></li>
+                                <li class="menu-item"><a href="#">Forensic investigation</a></li>
+                                <li class="menu-item"><a href="#">Remediation & Recovery</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children column_02"><a href="#">Technologies</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Velocity XDR</a></li>
+                        <li class="menu-item"><a href="#">Newton</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children column_03"><a href="#">Enterprise Solutions</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">OT Security</a></li>
+                        <li class="menu-item"><a href="#">Cloud Security</a></li>
+                        <li class="menu-item"><a href="#">Ransomware Readiness</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children two_columm"><a href="#">Company</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item menu-item-has-children category"><a href="#">About us</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Sygnia Story and Values</a></li>
+                        <li class="menu-item"><a href="#">Leadership</a></li>
+                        <li class="menu-item"><a href="#">Press releases</a></li>
+                        <li class="menu-item"><a href="#">Media mentions and recognition</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children category"><a href="#">Our Clients</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Case studies</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children"><a href="#">Careers</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">Our Culture</a></li>
+                    <li class="menu-item"><a href="#">Job opening</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children"><a href="#">Knowledge Center</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">Blog</a></li>
+                    <li class="menu-item"><a href="#">Threat reports & advisories</a></li>
+                    <li class="menu-item"><a href="#">Guides and tools</a></li>
+                    <li class="menu-item"><a href="#">Events and Webinars</a></li>
+                    <li class="menu-item"><a href="#">White Papers</a></li>
+                    <li class="menu-item"><a href="#">Podcasts</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile_fixed_btn"><a class="btn_u_a btn_reset" href="contact_form_under_attack.html">Under Attack</a></div>
+    <main>
+      <div class="b_main_banner">
+        <div class="section_decor absolute inset-0 -z-1 bg_gray">
+          <div class="hero_image"><img src="images/banner_hero_image.png" alt=""></div>
+        </div>
+        <div class="section_block">
+          <div class="container">
+            <div class="section_block_inner flex">
+              <div class="banner_content w100">
+                <div class="content_wrapper">
+                  <div class="content">
+                    <h1>BUILDING THE WORLD’S MOST CYBER-READY ORGANIZATIONS</h1>
+                    <p>Sygnia is the foremost global cyber readiness and response team, applying creative approaches and battle-tested solutions to help organizations beat attackers and stay secure.</p>
+                  </div>
+                  <div class="link_wrapper">
+                    <div class="link_decor"><a class="link" href="#">About Sygnia</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b_webinar">
+        <div class="section_decor absolute inset-0 -z-1">
+          <div class="decor_image absolute inset-0"><img src="images/decor_image_webinar.png" alt=""></div>
+        </div>
+        <div class="section_block">
+          <div class="container">
+            <div class="mini_banner">
+              <div class="mini_banner_image absolute inset-0 -z-1">
+                <picture><source media="(max-width: 767px)" srcset="images/webinar_banner_mobile.jpg">
+<source media="(min-width: 768px)" srcset="images/webinar_banner_desktop.jpg">
+<img src="images/webinar_banner_desktop.jpg" alt="WEBINAR">
+                </picture>
+              </div>
+              <div class="mini_banner_content flex">
+                <div class="banner_content w100">
+                  <div class="sub_title second_font">WEBINAR</div>
+                  <div class="main_title">Sygnia’s Webinar on Actionable Incident Response Strategies for 2023</div>
+                  <div class="btn_link"><a class="link_arrow" href="#">Watch now</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="webinar_wrapper">
+              <div class="webinars_list flex">
+                <div class="webinar_card">
+                  <div class="webinar_card_inner">
+                    <div class="webinar_icon">
+                      <div class="icon"><img src="images/webinar_icon_cyber_readiness.svg" alt=""></div>
+                    </div>
+                    <div class="webinar_title second_font section_title">
+                      <h2>Cyber Readiness</h2>
+                    </div>
+                    <div class="webinar_description">
+                      <div class="content">
+                        <p>Staying ahead of adversaries requires a deep understanding of how they think, and a commitment to continually iterate, adapt and advance. From assessment to preparedness to simulation, we enable our clients to stay secure against threats that are ever-changing and unrelenting.</p>
+                        <h4>Cyber ready never rests.</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="webinar_card">
+                  <div class="webinar_card_inner">
+                    <div class="webinar_icon">
+                      <div class="icon"><img src="images/webinar_icon_cyber_response.svg" alt=""></div>
+                    </div>
+                    <div class="webinar_title second_font section_title">
+                      <h2>Cyber RESPONSE</h2>
+                    </div>
+                    <div class="webinar_description">
+                      <div class="content">
+                        <p>Beating attackers at their game requires a partner who brings real-world experience to the cyber battlefield. Our incident response teams have a proven track record of swiftly containing and defeating cyber attacks, minimizing disruption and expertly guiding organizations through the crisis. </p>
+                        <h4>We’re in until the threat is out.</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b_about">
+        <div class="section_decor absolute inset-0 -z-1 bg_black"></div>
+        <div class="section_block">
+          <div class="container">
+            <div class="section_title second_font text_center">
+              <h2>Get to know us</h2>
+            </div>
+            <div class="description">
+              <div class="content text_center">
+                <p>We are the trusted advisor and service provider of technology and security teams, executive leaders and boards of leading organizations worldwide. </p>
+              </div>
+            </div>
+            <div class="link_wrapper">
+              <div class="link_decor text_center"><a class="link white_mode" href="#">Learn more about Sygnia</a></div>
+            </div>
+          </div>
+          <div class="slider_section">
+            <div class="slider_container">
+              <div class="slider_block">
+                <div class="slider_block_inner jsAboutSlider">
+                  <div class="swiper-wrapper">
+                    <div class="slider swiper-slide">
+                      <div class="slider_wrapper">
+                        <div class="banner_card">
+                          <div class="banner_image"><img src="images/image_slider_about_01.jpg" alt=""></div>
+                          <div class="card_content">
+                            <div class="content">
+                              <p>“Sygnia’s teams displayed exceptional expertise…in building the company’s resilience across its global operations”.</p>
+                            </div>
+                            <div class="info">
+                              <div class="author">CISO</div>
+                              <div class="company">Global chemical distribution company with operations in over 70 countries</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider swiper-slide">
+                      <div class="slider_wrapper">
+                        <div class="banner_card">
+                          <div class="banner_image"><img src="images/image_slider_about_01.jpg" alt=""></div>
+                          <div class="card_content">
+                            <div class="content">
+                              <p>“Sygnia’s teams displayed exceptional expertise…in building the company’s resilience across its global operations”.</p>
+                            </div>
+                            <div class="info">
+                              <div class="author">CISO</div>
+                              <div class="company">Global chemical distribution company with operations in over 70 countries</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider swiper-slide">
+                      <div class="slider_wrapper">
+                        <div class="banner_card">
+                          <div class="banner_image"><img src="images/image_slider_about_01.jpg" alt=""></div>
+                          <div class="card_content">
+                            <div class="content">
+                              <p>“Sygnia’s teams displayed exceptional expertise…in building the company’s resilience across its global operations”.</p>
+                            </div>
+                            <div class="info">
+                              <div class="author">CISO</div>
+                              <div class="company">Global chemical distribution company with operations in over 70 countries</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider swiper-slide">
+                      <div class="slider_wrapper">
+                        <div class="banner_card">
+                          <div class="banner_image"><img src="images/image_slider_about_01.jpg" alt=""></div>
+                          <div class="card_content">
+                            <div class="content">
+                              <p>“Sygnia’s teams displayed exceptional expertise…in building the company’s resilience across its global operations”.</p>
+                            </div>
+                            <div class="info">
+                              <div class="author">CISO</div>
+                              <div class="company">Global chemical distribution company with operations in over 70 countries</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="button-prev"></div>
+                  <div class="button-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="decor_line"></div>
+          </div>
+          <div class="company_logos_block">
+            <div class="company_logos">
+              <div class="logos_list flex">
+                <div class="logo_item">
+                  <div class="logo_wrap"><img src="images/company_logos_01.svg" alt=""></div>
+                </div>
+                <div class="logo_item">
+                  <div class="logo_wrap"><img src="images/company_logos_02.svg" alt=""></div>
+                </div>
+                <div class="logo_item">
+                  <div class="logo_wrap"><img src="images/company_logos_03.svg" alt=""></div>
+                </div>
+                <div class="logo_item">
+                  <div class="logo_wrap"><img src="images/company_logos_04.svg" alt=""></div>
+                </div>
+                <div class="logo_item">
+                  <div class="logo_wrap"><img src="images/company_logos_05.svg" alt=""></div>
+                </div>
+                <div class="logo_item">
+                  <div class="logo_wrap"><img src="images/company_logos_06.svg" alt=""></div>
+                </div>
+                <div class="logo_item">
+                  <div class="logo_wrap"><img src="images/company_logos_07.svg" alt=""></div>
+                </div>
+                <div class="logo_item">
+                  <div class="logo_wrap"><img src="images/company_logos_08.svg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b_offering">
+        <div class="section_decor absolute inset-0 -z-1">
+          <div class="decor_image absolute inset-0"><img src="images/decor_image_offering.png" alt=""></div>
+        </div>
+        <div class="section_block">
+          <div class="container">
+            <div class="section_title second_font text_center">
+              <h2>An end-to-end offering</h2>
+            </div>
+            <div class="description">
+              <div class="content text_center">
+                <p>Sygnia brings combat-proven expertise and ingenuity to each phase of an organization’s security journey. We meet our clients where they are and deliver the tailored insight and decisive action needed for them to be unstoppable in the face of cyber threats.</p>
+              </div>
+            </div>
+            <div class="link_wrapper">
+              <div class="link_decor text_center"><a class="link" href="#">Explore our solutions</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero_offering_wrapper">
+          <div class="hero_offering">
+            <div class="offering_navigation max_w_1274">
+              <div class="navigation_block flex second_font">
+                <div class="nav_item">KNOW</div>
+                <div class="nav_item">PREPERE</div>
+                <div class="nav_item">SIMULATE</div>
+                <div class="nav_item">DETECT</div>
+                <div class="nav_item">RESPOND & RECOVER</div>
+              </div>
+              <div id="progress-bar">
+                <div id="progress-bar-inner"></div>
+              </div>
+            </div>
+            <div class="main_slider_wrapper">
+              <div class="container">
+                <div class="main_slider_block jsOfferingWrapper">
+                  <div class="swiper-wrapper">
+                    <div class="slider swiper-slide">
+                      <div class="offering_slider flex">
+                        <div class="slider_image_wrap">
+                          <div class="slider_image"><img src="images/offering_slider_detect.png" alt=""></div>
+                        </div>
+                        <div class="slider_content_wrap">
+                          <div class="slider_content_inner">
+                            <div class="slider_counter">1 / 5</div>
+                            <div class="step_title second_font">KNOW</div>
+                            <div class="sub_title second_font">Crisis preparedness<br> Contingency Planning & IR Readiness</div>
+                            <div class="content">
+                              <p>Staying ahead of adversaries requires a deep understanding of how they think, and a commitment to continually iterate, adapt and advance. From assessment to preparedness to simulation, we enable our clients to stay secure against threats that are ever-changing and unrelenting</p>
+                            </div>
+                            <div class="link_wrapper">
+                              <div class="link_decor"><a class="link" href="#">Learn more</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider swiper-slide">
+                      <div class="offering_slider flex">
+                        <div class="slider_image_wrap">
+                          <div class="slider_image"><img src="images/offering_slider_detect.png" alt=""></div>
+                        </div>
+                        <div class="slider_content_wrap">
+                          <div class="slider_content_inner">
+                            <div class="slider_counter">2 / 5</div>
+                            <div class="step_title second_font">PREPERE</div>
+                            <div class="sub_title second_font">Crisis preparedness<br> Contingency Planning & IR Readiness</div>
+                            <div class="content">
+                              <p>Staying ahead of adversaries requires a deep understanding of how they think...</p>
+                            </div>
+                            <div class="link_wrapper">
+                              <div class="link_decor"><a class="link" href="#">Learn more</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider swiper-slide">
+                      <div class="offering_slider flex">
+                        <div class="slider_image_wrap">
+                          <div class="slider_image"><img src="images/offering_slider_detect.png" alt=""></div>
+                        </div>
+                        <div class="slider_content_wrap">
+                          <div class="slider_content_inner">
+                            <div class="slider_counter">3 / 5</div>
+                            <div class="step_title second_font">SIMULATE</div>
+                            <div class="sub_title second_font">Crisis preparedness<br> Contingency Planning & IR Readiness</div>
+                            <div class="content">
+                              <p>Staying ahead of adversaries requires a deep understanding of how they think...</p>
+                            </div>
+                            <div class="link_wrapper">
+                              <div class="link_decor"><a class="link" href="#">Learn more</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider swiper-slide">
+                      <div class="offering_slider flex">
+                        <div class="slider_image_wrap">
+                          <div class="slider_image"><img src="images/offering_slider_detect.png" alt=""></div>
+                        </div>
+                        <div class="slider_content_wrap">
+                          <div class="slider_content_inner">
+                            <div class="slider_counter">4 / 5</div>
+                            <div class="step_title second_font">DETECT</div>
+                            <div class="sub_title second_font">Crisis preparedness<br> Contingency Planning & IR Readiness</div>
+                            <div class="content">
+                              <p>Staying ahead of adversaries requires a deep understanding of how they think...</p>
+                            </div>
+                            <div class="link_wrapper">
+                              <div class="link_decor"><a class="link" href="#">Learn more</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider swiper-slide">
+                      <div class="offering_slider flex">
+                        <div class="slider_image_wrap">
+                          <div class="slider_image"><img src="images/offering_slider_detect.png" alt=""></div>
+                        </div>
+                        <div class="slider_content_wrap">
+                          <div class="slider_content_inner">
+                            <div class="slider_counter">5 / 5</div>
+                            <div class="step_title second_font">RESPOND & RECOVER</div>
+                            <div class="sub_title second_font">Crisis preparedness<br> Contingency Planning & IR Readiness</div>
+                            <div class="content">
+                              <p>Staying ahead of adversaries requires a deep understanding of how they think...</p>
+                            </div>
+                            <div class="link_wrapper">
+                              <div class="link_decor"><a class="link" href="#">Learn more</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b_knowledge_bank">
+        <div class="section_decor absolute inset-0 -z-1 bg_warm_white">
+          <div class="decor_image absolute inset-0"><img src="images/decor_image_knowledge_bank.png" alt=""></div>
+        </div>
+        <div class="section_block">
+          <div class="container">
+            <div class="section_title second_font text_center">
+              <h2>Tap our knowledge bank</h2>
+            </div>
+            <div class="description">
+              <div class="content text_center">
+                <p>Extensive cyber warfare and enterprise security experience.<br> An unrelenting eye on the threat landscape.<br> Insight tailored to executive leaders and cyber professionals.</p>
+              </div>
+            </div>
+            <div class="sub_info">
+              <div class="content text_center">
+                <p>All of this is built into the resources you’ll find in our Knowledge Center. Gain elite intelligence from our leading experts and research team to boost your cyber readiness.</p>
+              </div>
+            </div>
+            <div class="link_wrapper">
+              <div class="link_decor text_center"><a class="link" href="#">Explore our Knowledge Center</a></div>
+            </div>
+          </div>
+          <div class="articles_wrapper">
+            <div class="container">
+              <div class="articles_wrapper_inner">
+                <div class="articles_slider jsArticlesListSlider">
+                  <div class="articles_list swiper-wrapper">
+                    <div class="article_card swiper-slide">
+                      <div class="card_block">
+                        <div class="card_image">
+                          <div class="image_inner"><img src="images/article_image.jpg" alt=""></div>
+                        </div>
+                        <div class="card_content">
+                          <div class="card_category second_font">BLOG</div>
+                          <div class="article_title">
+                            <h3>12 Questions you should ask when choosing an MXDR</h3>
+                          </div>
+                          <div class="article_excerpt">
+                            <p>Lorem ipsum dolor sit amet. Ut quia consequatur et fuga aperiam est eligendi doloremque. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="article_card swiper-slide">
+                      <div class="card_block">
+                        <div class="card_image">
+                          <div class="image_inner"><img src="images/article_image.jpg" alt=""></div>
+                        </div>
+                        <div class="card_content">
+                          <div class="card_category second_font">REPORT</div>
+                          <div class="article_title">
+                            <h3>The downfall of dpapi top secret weapon</h3>
+                          </div>
+                          <div class="article_excerpt">
+                            <p>Lorem ipsum dolor sit amet. Ut quia consequatur et fuga aperiam est eligendi doloremque. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="article_card swiper-slide">
+                      <div class="card_block">
+                        <div class="card_image">
+                          <div class="image_inner"><img src="images/article_image.jpg" alt=""></div>
+                        </div>
+                        <div class="card_content">
+                          <div class="card_category second_font">BLOG</div>
+                          <div class="article_title">
+                            <h3>12 Questions you should ask when choosing an MXDR</h3>
+                          </div>
+                          <div class="article_excerpt">
+                            <p>Lorem ipsum dolor sit amet. Ut quia consequatur et fuga aperiam est eligendi doloremque. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="article_card swiper-slide">
+                      <div class="card_block">
+                        <div class="card_image">
+                          <div class="image_inner"><img src="images/article_image.jpg" alt=""></div>
+                        </div>
+                        <div class="card_content">
+                          <div class="card_category second_font">BLOG</div>
+                          <div class="article_title">
+                            <h3>12 Questions you should ask when choosing an MXDR</h3>
+                          </div>
+                          <div class="article_excerpt">
+                            <p>Lorem ipsum dolor sit amet. Ut quia consequatur et fuga aperiam est eligendi doloremque. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nav_wrapper">
+                    <div class="nav_block flex">
+                      <div class="buttons_wrap flex">
+                        <div class="button-prev"></div>
+                        <div class="button-next"></div>
+                      </div>
+                      <div class="line">
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b_subsctibe">
+        <div class="section_decor absolute inset-0 -z-1">
+          <div class="degor_image">
+            <picture><source media="(max-width: 767px)" srcset="images/banner_subsctiber_mobile.jpg">
+<source media="(min-width: 768px)" srcset="images/banner_subsctibe.jpg">
+<img src="images/banner_subsctibe.jpg" alt="subsctibe decor">
+            </picture>
+          </div>
+        </div>
+        <div class="section_block flex">
+          <div class="container">
+            <div class="section_block_inner flex row">
+              <div class="content_wrappper">
+                <div class="content_inner">
+                  <div class="section_title">
+                    <h3>Want to get in touch?</h3>
+                  </div>
+                  <div class="links_list flex">
+                    <div class="link_wrapper">
+                      <div class="link_decor text_center"><a class="link white_mode" href="#">Contact us</a></div>
+                    </div>
+                    <div class="link_wrapper">
+                      <div class="link_decor text_center"><a class="link white_mode" href="#">Request a demo</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="subscribe_part">
+                <div class="subscribe_block">
+                  <div class="block_inner">
+                    <div class="form_title">
+                      <h3>Subscribe to newsletter</h3>
+                    </div>
+                    <div class="form_part">
+                      <form>
+                        <div class="form_row">
+                          <input class="form_control" type="text" placeholder="E mail">
+                        </div>
+                        <div class="btn_row link_decor">
+                          <button class="link white_mode" type="submit">Submit</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="b_footer">
+      <div class="mobile_part">
+        <div class="container">
+          <div class="footer_logo"><a class="link_logo" href="#"><img src="images/main_logo.svg" alt=""></a></div>
+        </div>
+      </div>
+      <div class="footer_top_part">
+        <div class="container">
+          <div class="footer_top">
+            <div class="footer_menus_wrapper flex">
+              <div class="menu_column">
+                <div class="menu_title">Company</div>
+                <div class="menu">
+                  <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our Clients</a></li>
+                    <li><a href="#">Careers</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu_column">
+                <div class="menu_title">Services</div>
+                <div class="menu">
+                  <ul>
+                    <li><a href="#">Know</a></li>
+                    <li><a href="#">Prepare</a></li>
+                    <li><a href="#">Simulate</a></li>
+                    <li><a href="#">Detect</a></li>
+                    <li><a href="#">Respond & Recover</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu_column">
+                <div class="menu_title">Technologies</div>
+                <div class="menu">
+                  <ul>
+                    <li><a href="#">Velocity XDR</a></li>
+                    <li><a href="#">Newton</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu_column">
+                <div class="menu_title">Enterprise Solutions</div>
+                <div class="menu">
+                  <ul>
+                    <li><a href="#">OT Security</a></li>
+                    <li><a href="#">Cloud Security</a></li>
+                    <li><a href="#">Ransomware Readiness</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu_column">
+                <div class="menu_title">Knowledge Center</div>
+                <div class="menu">
+                  <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Reports and advisories</a></li>
+                    <li><a href="#">Guides and tools</a></li>
+                    <li><a href="#">Events and webinars</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom_part">
+        <div class="container">
+          <div class="footer_bottom flex">
+            <div class="bottom_left_part flex">
+              <div class="footer_logo"><a class="link_logo" href="#"><img src="images/main_logo.svg" alt=""></a></div>
+              <div class="bottom_content flex">
+                <div class="copy">Copyright © 2023 Sygnia, Inc. All rights reserved.</div>
+                <div class="custom_links">
+                  <div class="links_list">
+                    <ul>
+                      <li><a href="#">Privacy</a></li>
+                      <li><a href="#">Terms of use</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom_right_part">
+              <div class="socials_wrapper">
+                <div class="socials_list flex">
+                  <div class="social_item"><a class="social_link" href="#"><img src="images/social_facebook.svg" alt=""></a></div>
+                  <div class="social_item"><a class="social_link" href="#"><img src="images/social_x.svg" alt=""></a></div>
+                  <div class="social_item"><a class="social_link" href="#"><img src="images/social_linkedin.svg" alt=""></a></div>
+                  <div class="social_item"><a class="social_link" href="#"><img src="images/social_youtube.svg" alt=""></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--include ../modals/_add-product-->
+    <script src="scripts/jquery.min.js"></script>
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

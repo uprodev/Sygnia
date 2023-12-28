@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+    <title>Contact Form Under Attack</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header class="b_header">
+      <div class="container">
+        <div class="header_wrapper flex">
+          <div class="logo_wrapper"><a class="link_logo" href="main.html"><img src="images/main_logo.svg" alt=""></a></div>
+          <div class="header_menu_wrap flex">
+            <div class="header_menu">
+              <div class="header_menu_inner">
+                <div class="menu">
+                  <ul>
+                    <li class="menu-item menu-item-has-children mega_menu"><a href="#">Solutions</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item menu-item-has-children column_01"><a href="#">Services</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item menu-item-has-children category columns"><a href="#">Cyber Readiness</a>
+                              <ul class="sub-menu">
+                                <li class="menu-item menu-item-has-children sub_category"><a href="#">Know</a>
+                                  <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Posture Assessment & Resilience Enhancement</a></li>
+                                    <li class="menu-item"><a href="#">Cloud & OT Assessments</a></li>
+                                  </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children sub_category"><a href="#">Prepare</a>
+                                  <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Crisis preparedness</a></li>
+                                    <li class="menu-item"><a href="#">Contingency Planning & IR Readiness</a></li>
+                                  </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children sub_category"><a href="#">Simulate</a>
+                                  <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Red Teaming</a></li>
+                                    <li class="menu-item"><a href="#">Purple Teaming​</a></li>
+                                    <li class="menu-item"><a href="#">Tabletop Wargames​</a></li>
+                                  </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children sub_category"><a href="#">Detect</a>
+                                  <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Continuous Monitoring (MXDR)</a></li>
+                                    <li class="menu-item"><a href="#">Threat Hunting & Compromise Assessment</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children category"><a href="#">Cyber response</a>
+                              <ul class="sub-menu">
+                                <li class="menu-item menu-item-has-children sub_category"><a href="#">Respond & Recover</a>
+                                  <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Cyber Crisis Management</a></li>
+                                    <li class="menu-item"><a href="#">Forensic investigation</a></li>
+                                    <li class="menu-item"><a href="#">Remediation & Recovery</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children column_02"><a href="#">Technologies</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Velocity XDR</a></li>
+                            <li class="menu-item"><a href="#">Newton</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children column_03"><a href="#">Enterprise Solutions</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">OT Security</a></li>
+                            <li class="menu-item"><a href="#">Cloud Security</a></li>
+                            <li class="menu-item"><a href="#">Ransomware Readiness</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children two_columm"><a href="#">Company</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item menu-item-has-children category"><a href="#">About us</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Sygnia Story and Values</a></li>
+                            <li class="menu-item"><a href="#">Leadership</a></li>
+                            <li class="menu-item"><a href="#">Press releases</a></li>
+                            <li class="menu-item"><a href="#">Media mentions and recognition</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children category"><a href="#">Our Clients</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Case studies</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children"><a href="#">Careers</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Our Culture</a></li>
+                        <li class="menu-item"><a href="#">Job opening</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children"><a href="#">Knowledge Center</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Blog</a></li>
+                        <li class="menu-item"><a href="#">Threat reports & advisories</a></li>
+                        <li class="menu-item"><a href="#">Guides and tools</a></li>
+                        <li class="menu-item"><a href="#">Events and Webinars</a></li>
+                        <li class="menu-item"><a href="#">White Papers</a></li>
+                        <li class="menu-item"><a href="#">Podcasts</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="search_wrapper">
+              <button class="btn_reset btn_search" type="button"></button>
+            </div>
+            <div class="mobile_button_menu">
+              <button class="menu_toggler jsMenu"><span class="toggler_top"></span><span class="toggler_middle"></span><span class="toggler_bottom"></span></button>
+            </div>
+          </div>
+        </div>
+        <div class="custom_navigation">
+          <div class="nav_item"><a class="nav_link gold_color" href="contact_form_under_attack.html"><span class="icon"><img src="images/icon_info.svg" alt=""></span><span class="title">I’m under attack</span></a></div>
+          <div class="nav_item"><a class="nav_link" href="contact_form_general.html"><span class="title">Contact us</span></a></div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile_header_menu">
+      <div class="mobile_menu_inner">
+        <div class="menu_button"><a class="btn" href="contact_form_under_attack.html"><span class="icon"><img src="images/icon_info.svg" alt=""></span><span class="title">I’m under attack</span></a></div>
+        <div class="mobile_menu_block">
+          <div class="menu_wrap">
+            <div class="menu_list">
+              <ul>
+                <li class="menu-item menu-item-has-children mega_menu"><a href="#">Solutions</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item menu-item-has-children column_01"><a href="#">Services</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item menu-item-has-children category columns"><a href="#">Cyber Readiness</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item menu-item-has-children sub_category"><a href="#">Know</a>
+                              <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Posture Assessment & Resilience Enhancement</a></li>
+                                <li class="menu-item"><a href="#">Cloud & OT Assessments</a></li>
+                              </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children sub_category"><a href="#">Prepare</a>
+                              <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Crisis preparedness</a></li>
+                                <li class="menu-item"><a href="#">Contingency Planning & IR Readiness</a></li>
+                              </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children sub_category"><a href="#">Simulate</a>
+                              <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Red Teaming</a></li>
+                                <li class="menu-item"><a href="#">Purple Teaming​</a></li>
+                                <li class="menu-item"><a href="#">Tabletop Wargames​</a></li>
+                              </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children sub_category"><a href="#">Detect</a>
+                              <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Continuous Monitoring (MXDR)</a></li>
+                                <li class="menu-item"><a href="#">Threat Hunting & Compromise Assessment</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children category"><a href="#">Cyber response</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item menu-item-has-children sub_category"><a href="#">Respond & Recover</a>
+                              <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Cyber Crisis Management</a></li>
+                                <li class="menu-item"><a href="#">Forensic investigation</a></li>
+                                <li class="menu-item"><a href="#">Remediation & Recovery</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children column_02"><a href="#">Technologies</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Velocity XDR</a></li>
+                        <li class="menu-item"><a href="#">Newton</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children column_03"><a href="#">Enterprise Solutions</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">OT Security</a></li>
+                        <li class="menu-item"><a href="#">Cloud Security</a></li>
+                        <li class="menu-item"><a href="#">Ransomware Readiness</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children two_columm"><a href="#">Company</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item menu-item-has-children category"><a href="#">About us</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Sygnia Story and Values</a></li>
+                        <li class="menu-item"><a href="#">Leadership</a></li>
+                        <li class="menu-item"><a href="#">Press releases</a></li>
+                        <li class="menu-item"><a href="#">Media mentions and recognition</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children category"><a href="#">Our Clients</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Case studies</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children"><a href="#">Careers</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">Our Culture</a></li>
+                    <li class="menu-item"><a href="#">Job opening</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-has-children"><a href="#">Knowledge Center</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">Blog</a></li>
+                    <li class="menu-item"><a href="#">Threat reports & advisories</a></li>
+                    <li class="menu-item"><a href="#">Guides and tools</a></li>
+                    <li class="menu-item"><a href="#">Events and Webinars</a></li>
+                    <li class="menu-item"><a href="#">White Papers</a></li>
+                    <li class="menu-item"><a href="#">Podcasts</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile_fixed_btn"><a class="btn_u_a btn_reset" href="contact_form_under_attack.html">Under Attack</a></div>
+    <main>
+      <div class="b_page_contact_form">
+        <div class="section_block">
+          <div class="container">
+            <div class="section_block_inner flex">
+              <div class="main_part">
+                <div class="main_content">
+                  <div class="page_title">
+                    <h1>I’m under attcak!</h1>
+                  </div>
+                  <div class="page_description">
+                    <div class="content">
+                      <p>Whether you have questions about a Mandiant solution or need cyber security help of any kind, our global network of experts are standing by 24x7.</p>
+                    </div>
+                  </div>
+                  <div class="form_under_attack">
+                    <div class="form_wrapper">
+                      <form>
+                        <div class="rows_wrapper jsMaskFormControl">
+                          <div class="form_row">
+                            <input class="form_control" type="text" placeholder="First name">
+                          </div>
+                          <div class="form_row">
+                            <input class="form_control" type="text" placeholder="Last name">
+                          </div>
+                          <div class="form_row">
+                            <input class="form_control" type="email" placeholder="Email">
+                          </div>
+                          <div class="form_row">
+                            <select class="single_select_control">
+                              <option value="#">Country</option>
+                              <option value="#">Country 2</option>
+                            </select>
+                          </div>
+                          <div class="form_row">
+                            <input class="form_control" type="text" placeholder="Job title">
+                          </div>
+                          <div class="form_row">
+                            <input class="form_control" type="text" placeholder="Company name">
+                          </div>
+                          <div class="form_row">
+                            <input class="form_control" type="tel" placeholder="Phone number">
+                          </div>
+                          <div class="form_row">
+                            <select class="single_select_control">
+                              <option value="#">Area of interest</option>
+                              <option value="#">Area of interest 2</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="btn_row">
+                          <div class="btn_row link_decor">
+                            <button class="link" type="submit">Submit</button>
+                          </div>
+                        </div>
+                        <div class="checkboxes_list">
+                          <div class="checkbox_row">
+                            <label class="label_checkbox">
+                              <input type="checkbox" name="" checked="checked"><span class="checkbox_title">Send me updates on the latest news and events</span>
+                            </label>
+                          </div>
+                          <div class="checkbox_row">
+                            <label class="label_checkbox">
+                              <input type="checkbox" name=""><span class="checkbox_title">Lorem ipsum dolor sit amet. Ut quia consequatur et fuga aperiam est eligendi doloremque. Quo labore molestias 33 consequatur commodi.</span>
+                            </label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar_part">
+                <div class="block_decor">
+                  <div class="decor"></div>
+                  <div class="decor_image">
+                    <picture><source media="(max-width: 991px)" srcset="images/sidebar_part_decor_mobile.jpg">
+<source media="(min-width: 992px)" srcset="images/sidebar_part_decor.png">
+<img src="images/sidebar_part_decor.png" alt="under attack decor">
+                    </picture>
+                  </div>
+                </div>
+                <div class="sidebar_content">
+                  <div class="sidebar_contacts">
+                    <div class="info_icon"><img src="images/info_icon.svg" alt=""></div>
+                    <div class="contacts_title">24- Hour Hotline</div>
+                    <div class="contacts_list">
+                      <ul>
+                        <li>United States +1 8 77 686 8680</li>
+                        <li>Australia +61 2 8526 5331</li>
+                        <li>Singapore +65 6964 3556</li>
+                        <li>France +33 4 12 34 00 09</li>
+                        <li>Sweden +46 8 525 199 98</li>
+                        <li>Israel +972 3-308-2290</li>
+                        <li>UK +44 20 4574 6347</li>
+                      </ul>
+                    </div>
+                    <div class="contacts_list">
+                      <div class="desktop_contacts">
+                        <ul>
+                          <li><a href="tel:972747875920">+972-74-7875920</a></li>
+                          <li><a href="mailto:contact@sygnia.co">contact@sygnia.co</a></li>
+                        </ul>
+                      </div>
+                      <div class="mobile_contacts">
+                        <ul>
+                          <li><a href="tel:972747875920">+972-74-7875920</a></li>
+                        </ul>
+                      </div>
+                      <div class="contacts_list_mobile"><a class="btn btn_white arrow" href="#">Contact us</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b_custom_footer">
+        <div class="container">
+          <div class="footer_wrap max_w_1274">
+            <div class="page_under_attack">
+              <div class="column_title">Headquarters</div>
+              <div class="contacts_wrap">
+                <ul>
+                  <li>94a Yigal Alon St., 29th floor<br> Tel Aviv, Israel 6789155</li>
+                  <li>488 Madison Ave., 11th floor<br> New York, NY, USA 10022</li>
+                  <li>52 Tras St., 2nd floor<br> Singapore 078991</li>
+                  <li>8 Cavendish Square<br> London W1G 0PD, UK</li>
+                  <li>488 Madison Ave., 11th floor<br> New York, NY, USA 10022</li>
+                  <li>52 Tras St., 2nd floor<br> Singapore 078991</li>
+                  <li>8 Cavendish Square<br> London W1G 0PD, UK</li>
+                  <li>52 Tras St., 2nd floor<br> Singapore 078991</li>
+                  <li>8 Cavendish Square<br> London W1G 0PD, UK</li>
+                  <li>52 Tras St., 2nd floor<br> Singapore 078991</li>
+                  <li>8 Cavendish Square<br> London W1G 0PD, UK</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="b_footer">
+      <div class="mobile_part">
+        <div class="container">
+          <div class="footer_logo"><a class="link_logo" href="#"><img src="images/main_logo.svg" alt=""></a></div>
+        </div>
+      </div>
+      <div class="footer_top_part">
+        <div class="container">
+          <div class="footer_top">
+            <div class="footer_menus_wrapper flex">
+              <div class="menu_column">
+                <div class="menu_title">Company</div>
+                <div class="menu">
+                  <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our Clients</a></li>
+                    <li><a href="#">Careers</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu_column">
+                <div class="menu_title">Services</div>
+                <div class="menu">
+                  <ul>
+                    <li><a href="#">Know</a></li>
+                    <li><a href="#">Prepare</a></li>
+                    <li><a href="#">Simulate</a></li>
+                    <li><a href="#">Detect</a></li>
+                    <li><a href="#">Respond & Recover</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu_column">
+                <div class="menu_title">Technologies</div>
+                <div class="menu">
+                  <ul>
+                    <li><a href="#">Velocity XDR</a></li>
+                    <li><a href="#">Newton</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu_column">
+                <div class="menu_title">Enterprise Solutions</div>
+                <div class="menu">
+                  <ul>
+                    <li><a href="#">OT Security</a></li>
+                    <li><a href="#">Cloud Security</a></li>
+                    <li><a href="#">Ransomware Readiness</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu_column">
+                <div class="menu_title">Knowledge Center</div>
+                <div class="menu">
+                  <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Reports and advisories</a></li>
+                    <li><a href="#">Guides and tools</a></li>
+                    <li><a href="#">Events and webinars</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom_part">
+        <div class="container">
+          <div class="footer_bottom flex">
+            <div class="bottom_left_part flex">
+              <div class="footer_logo"><a class="link_logo" href="#"><img src="images/main_logo.svg" alt=""></a></div>
+              <div class="bottom_content flex">
+                <div class="copy">Copyright © 2023 Sygnia, Inc. All rights reserved.</div>
+                <div class="custom_links">
+                  <div class="links_list">
+                    <ul>
+                      <li><a href="#">Privacy</a></li>
+                      <li><a href="#">Terms of use</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom_right_part">
+              <div class="socials_wrapper">
+                <div class="socials_list flex">
+                  <div class="social_item"><a class="social_link" href="#"><img src="images/social_facebook.svg" alt=""></a></div>
+                  <div class="social_item"><a class="social_link" href="#"><img src="images/social_x.svg" alt=""></a></div>
+                  <div class="social_item"><a class="social_link" href="#"><img src="images/social_linkedin.svg" alt=""></a></div>
+                  <div class="social_item"><a class="social_link" href="#"><img src="images/social_youtube.svg" alt=""></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--include ../modals/_add-product-->
+    <script src="scripts/jquery.min.js"></script>
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
