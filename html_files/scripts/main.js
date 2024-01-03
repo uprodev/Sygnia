@@ -94,6 +94,16 @@
           }
         });
       }
+
+      $('.jsPsitiionInfo').each(function () {
+        var $this = $(this);
+        var $data_row = $this.parents('.data_row');
+        var $description_block = $this.parents('.data_row').find('.description_block');
+        $this.on('click', function () {
+          $data_row.toggleClass('active');
+          $description_block.slideToggle(200);
+        });
+      });
     },
 
     fancybox: function fancybox() {
